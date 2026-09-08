@@ -8,6 +8,9 @@ public class EduClicandoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EduClicandoApplication.class, args);
-	}
 
+
+
+
+	}
 }

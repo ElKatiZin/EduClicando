@@ -1,0 +1,28 @@
+package com.EduClicando.EduClicando.Models;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@Entity
+
+public class Mascote {
+    @Id
+    private long id;
+    private String nome;
+    private int fome;
+    private double matematica;
+    private double portugues;
+    private double tecnologia;
+    private int mNivel;
+    private int pNivel;
+    private int cNivel;
+
+}
