@@ -12,7 +12,9 @@ import java.time.LocalDate;
 @Getter @Setter
 @Entity
 
+
 public class Aluno {
+    @Column (name = "Aluno", columnDefinition = "256", nullable = false)
     @Id
     private String cpf;
     @Column (nullable = false)

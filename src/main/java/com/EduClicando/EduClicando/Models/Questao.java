@@ -15,6 +15,7 @@ import java.util.List;
 
 
 public class Questao {
+    @Column (name = "Questão", columnDefinition = "256", nullable = false)
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;

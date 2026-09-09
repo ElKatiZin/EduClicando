@@ -1,5 +1,6 @@
 package com.EduClicando.EduClicando.Models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
@@ -16,6 +17,7 @@ import java.util.List;
 @Entity
 
 public class Licao {
+    @Column(name = "Lição", columnDefinition = "256", nullable = false)
     @Id
     private long id;
 
