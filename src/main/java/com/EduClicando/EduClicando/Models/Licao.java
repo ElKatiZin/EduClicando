@@ -20,7 +20,6 @@ public class Licao {
     @Column(name = "Lição", columnDefinition = "256", nullable = false)
     @Id
     private long id;
-
     private String nome;
     private List<Licao> licoes;
     private double nivel;
