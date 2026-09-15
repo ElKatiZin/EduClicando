@@ -23,6 +23,7 @@ public class Aluno {
     private String nomeDeUsuario;
     private String email;
     private String senha;
+    @Column (name = "Data_De_Nascimento")
     private LocalDate dataNasc;
     private int pontuacao;
     private int pontosTotais;

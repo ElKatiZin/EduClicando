@@ -20,6 +20,8 @@ public class Alternativa {
     @Column (name = "Alternativa", length = 256, nullable = false)
     @Id
     private long id;
+    @Column (nullable = false, length = 256)
     private String letra;
+    @Column (nullable = false, name = "Alternativa_Correta")
     private boolean correta;
 }

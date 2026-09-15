@@ -18,5 +18,6 @@ public class Instrucao {
     @Column(name = "Instrução", columnDefinition = "256", nullable = false)
     @Id
     private long id;
+    @Column(length = 2048, nullable = false)
     private String detalhamento;
 }

@@ -18,7 +18,9 @@ public class Curso {
     @Column(name = "Curso", columnDefinition = "256", nullable = false)
     @Id
     private long id;
+    @Column(length = 256, nullable = false)
     private String nomeDoCurso;
+    @Column(length = 2048, nullable = false)
     private long descricao;
 
 }
