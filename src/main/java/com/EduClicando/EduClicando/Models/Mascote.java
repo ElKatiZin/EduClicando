@@ -18,6 +18,7 @@ public class Mascote {
     @Column(name = "Mascote", columnDefinition = "256", nullable = false)
     @Id
     private long id;
+    @Column (name = "Nome_Mascote")
     private String nome;
     private int fome;
     private double matematica;
