@@ -16,9 +16,10 @@ import lombok.Setter;
 
 public class Comida {
     @Column(name = "Comida", columnDefinition = "256", nullable = false)
+    private String Nome;
     @Id
-    private long id;
+    private String id;
     @Column(name = "Valor_comida")
-    private double valor;
+    private int valor;
     private int fomeSaciada;
 }
