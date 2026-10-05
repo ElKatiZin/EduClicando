@@ -24,7 +24,7 @@ public class ComidaService {
             System.out.println("O valor inserido é inválido, insira um valor válido.");
         };
     }
-
+//
     public void Nutricional (Comida comida) {
         if (comida.getFomeSaciada() != 0) {
             System.out.println("Delícia!");
