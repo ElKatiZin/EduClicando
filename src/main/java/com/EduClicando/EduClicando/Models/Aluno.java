@@ -16,7 +16,7 @@ import java.time.LocalDate;
 public class Aluno {
 
     @Id
-    @Column (length = 12, columnDefinition = "NUMBERS", nullable = false)
+    @Column (length = 12, nullable = false)
     private String telefone;
     @Column (nullable = false)
     private String nome;
