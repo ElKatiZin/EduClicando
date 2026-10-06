@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter @Setter
-@Entity @Table (name = "Questão")
+@Entity @Table(name = "Questão")
 
 
 public class Questao {
@@ -19,10 +19,18 @@ public class Questao {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
-    @Column(length = 2048, nullable = false)
+    @Column(length = 16384, nullable = false)
     private String enunciado;
+    @Column(length = 2048)
+    private String linkImagem;
     @Column
     private List<Alternativa> alternativas;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "licao_id")
+    private Licao licao;
+
+    @OneToMany(mappedBy = "alternativa")
+    private List<Alternativa> alternativaList;
 
 
 }
