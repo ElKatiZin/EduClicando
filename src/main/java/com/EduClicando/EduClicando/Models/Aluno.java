@@ -14,9 +14,10 @@ import java.time.LocalDate;
 
 
 public class Aluno {
-    @Column (name = "Aluno", columnDefinition = "256", nullable = false)
+
     @Id
-    private String cpf;
+    @Column (length = 12, columnDefinition = "NUMBERS", nullable = false)
+    private String telefone;
     @Column (nullable = false)
     private String nome;
     @Column (unique = true)

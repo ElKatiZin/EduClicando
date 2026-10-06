@@ -1,8 +1,6 @@
 package com.EduClicando.EduClicando.Models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,8 +13,8 @@ import lombok.Setter;
 @Entity
 
 public class Comida {
-    @Column(name = "Comida", columnDefinition = "256", nullable = false)
     @Id
+    @GeneratedValue (strategy = GenerationType.SEQUENCE)
     private long id;
     @Column(name = "Valor_comida")
     private double valor;
