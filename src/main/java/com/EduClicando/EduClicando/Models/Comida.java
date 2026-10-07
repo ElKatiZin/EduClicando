@@ -17,6 +17,6 @@ public class Comida {
     @GeneratedValue (strategy = GenerationType.SEQUENCE)
     private long id;
     @Column(name = "Valor_comida")
-    private double valor;
+    private int valor;
     private int fomeSaciada;
 }
