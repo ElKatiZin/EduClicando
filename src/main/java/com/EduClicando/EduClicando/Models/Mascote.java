@@ -14,7 +14,6 @@ import lombok.Setter;
 
 @Table(name = "Mascote")
 public class Mascote {
-
     @Id
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_usuario")

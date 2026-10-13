@@ -14,7 +14,6 @@ import java.time.LocalDate;
 
 
 public class Aluno {
-
     @Id
     @Column (length = 12, nullable = false)
     private String telefone;

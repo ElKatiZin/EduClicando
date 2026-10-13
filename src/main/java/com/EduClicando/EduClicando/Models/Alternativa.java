@@ -14,6 +14,7 @@ import lombok.Setter;
 
 public class Alternativa {
     @Id
+    @GeneratedValue (strategy = GenerationType.SEQUENCE)
     private long id;
     @Column (nullable = false, length = 256)
     private String letra;

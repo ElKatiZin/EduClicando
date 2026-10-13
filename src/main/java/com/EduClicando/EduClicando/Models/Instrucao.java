@@ -13,7 +13,6 @@ import lombok.Setter;
 @Entity
 
 public class Instrucao {
-    @Column(name = "Instrução", columnDefinition = "256", nullable = false)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

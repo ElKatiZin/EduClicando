@@ -15,7 +15,6 @@ import java.util.List;
 @Entity
 
 public class Licao {
-    @Column(nullable = false)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
