@@ -16,7 +16,7 @@ import java.util.List;
 
 public class Licao {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
     @Column(nullable = false)
     private List<Licao> licoes;

@@ -19,9 +19,11 @@ public class Aluno {
     private String telefone;
     @Column (nullable = false)
     private String nome;
-    @Column (unique = true)
+    @Column (unique = true, nullable = false)
     private String nomeDeUsuario;
+    @Column (unique = true, nullable = false)
     private String email;
+    @Column (nullable = false)
     private String senha;
     @Column (name = "Data_De_Nascimento")
     private LocalDate dataNasc;

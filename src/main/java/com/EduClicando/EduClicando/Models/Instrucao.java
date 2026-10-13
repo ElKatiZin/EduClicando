@@ -16,7 +16,7 @@ public class Instrucao {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(length = 2048, nullable = false)
+    @Column(length = 4096, nullable = false)
     private String detalhamento;
     @Column(length = 2048)
     private String linkImagem;

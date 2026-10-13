@@ -16,7 +16,7 @@ import java.util.List;
 
 public class Questao {
     @Id
-    @GeneratedValue (strategy = GenerationType.AUTO)
+    @GeneratedValue (strategy = GenerationType.SEQUENCE)
     private Long id;
     @Column(length = 16384, nullable = false)
     private String enunciado;
