@@ -1,5 +1,6 @@
 package com.EduClicando.EduClicando.Models;
 
+import com.EduClicando.EduClicando.Models.Aluno.Aluno;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package com.EduClicando.EduClicando.Models;
+package com.EduClicando.EduClicando.Models.Aluno;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
