@@ -4,6 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
+import org.springframework.jmx.export.naming.IdentityNamingStrategy;
 
 
 import java.time.LocalDate;
@@ -26,8 +27,8 @@ public class Aluno {
     private String senha;
     @Column (name = "Data_De_Nascimento")
     private LocalDate dataNasc;
-    private int pontuacao;
-    private int pontosTotais;
-    private int nivel;
+    private Integer pontuacao;
+    private Integer pontosTotais;
+    private Integer nivel;
 
 }

@@ -16,7 +16,7 @@ public class Instrucao {
     @Column(name = "Instrução", columnDefinition = "256", nullable = false)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column(length = 2048, nullable = false)
     private String detalhamento;
     @Column(length = 2048)

@@ -14,11 +14,11 @@ import lombok.Setter;
 
 public class Alternativa {
     @Id
-    private long id;
+    private Long id;
     @Column (nullable = false, length = 256)
     private String letra;
     @Column (nullable = false, name = "Alternativa_Correta")
-    private boolean correta;
+    private Boolean correta;
     @Column (nullable = false, length = 256)
     private String resposta;
 

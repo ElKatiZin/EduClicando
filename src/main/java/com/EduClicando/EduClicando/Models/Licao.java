@@ -18,9 +18,8 @@ public class Licao {
     @Column(nullable = false)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    @Column(nullable = false)
-    private List<Licao> licoes;
+    private Long id;
+
     private double nivel;
     @Column(length = 256, nullable = false)
     private String nome;

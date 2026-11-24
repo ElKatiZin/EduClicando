@@ -18,11 +18,11 @@ public class Curso {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column(length = 256, nullable = false)
     private String nomeDoCurso;
     @Column(length = 2048, nullable = false)
-    private long descricao;
+    private Long descricao;
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "curso")
     private List<Licao> licaoList;
 

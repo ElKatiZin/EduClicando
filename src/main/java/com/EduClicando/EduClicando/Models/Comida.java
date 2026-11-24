@@ -15,8 +15,10 @@ import lombok.Setter;
 public class Comida {
     @Id
     @GeneratedValue (strategy = GenerationType.SEQUENCE)
-    private long id;
+    private Long id;
+    private String comidaNome;
     @Column(name = "Valor_comida")
-    private int valor;
-    private int fomeSaciada;
+    private Integer comidaValor;
+    private Integer fomeSaciada;
+    private String imgLink;
 }

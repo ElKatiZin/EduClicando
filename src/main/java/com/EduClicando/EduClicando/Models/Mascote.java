@@ -22,14 +22,14 @@ public class Mascote {
 
     @Column (name = "Nome_Mascote")
     private String nome;
-    private int fome;
-    private int tedio;
-    private double matematica;
-    private double portugues;
-    private double tecnologia;
-    private int mNivel;
-    private int pNivel;
-    private int cNivel;
+    private Integer fome;
+    private Integer tedio;
+    private Double matematica;
+    private Double portugues;
+    private Double tecnologia;
+    private Integer mNivel;
+    private Integer pNivel;
+    private Integer cNivel;
 
 
 
